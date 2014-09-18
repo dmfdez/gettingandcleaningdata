@@ -6,7 +6,7 @@ url <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR
 file <- 'dataset.zip'
 download(url,file)
 unzip(file)
-print("Dataset downloaded. Please, proceed with run.analysis()")
+print("Dataset downloaded")
 
 # Create funtion load.dataset
 load.dataset <- function(type, selected.features, activity.labels){
@@ -31,6 +31,7 @@ load.dataset <- function(type, selected.features, activity.labels){
 }
 
 setwd("UCI HAR Dataset/")
+
 print("Read and process features and activity text files")
 
 # Load id->feature label data
